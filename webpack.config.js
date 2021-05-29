@@ -21,7 +21,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "src/pages/launch-guide.html",
     }),
 
     // Add your plugins here
@@ -45,6 +45,10 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
+      {
+        test: /\.html$/i,
+        use: [{loader: "html-loader?interpolate"}]
+      }
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
