@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+@import "./variables";
+@import "./nav";
+@import "./header";
+
+
+html,body{
+    height: 100vh;
+    background-color: $gray-100;
+}
+.container-fluid{
+    height: 100%;
+}

@@ -1,0 +1,25 @@
+.lower-menu{
+    .nav-link{
+        font-weight: 700;
+    }
+}
+.nav-link{ 
+    width: $nav-link-width;
+    height:  $nav-link-height;
+    color:$gray-100;
+    text-align: start;
+    margin-bottom: 5px;
+    &:hover{
+        font-weight: 700;
+        border-radius: 5px;
+        border:solid 2px $white ;
+        color: $gray-100;
+    }
+    &:focus{
+        color: $gray-100;
+    }
+}
+.nav-link.active{
+    background-color: $dark;
+    border-radius: 5px;
+}
